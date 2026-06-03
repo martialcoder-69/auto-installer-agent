@@ -1,0 +1,92 @@
+# ---------------- CORE LANGCHAIN ----------------
+langchain
+langchain-core
+langchain-community
+langchain-text-splitters
+langgraph
+
+# ---------------- LLM PROVIDERS ----------------
+openai
+langchain-openai
+transformers
+huggingface_hub
+langchain-huggingface
+langchain-ollama
+
+# ---------------- EMBEDDINGS ----------------
+sentence-transformers
+
+# ---------------- VECTOR DATABASES ----------------
+faiss-cpu
+chromadb
+pinecone-client
+weaviate-client
+
+# ---------------- DOCUMENT LOADERS / PARSING ----------------
+pypdf
+unstructured
+beautifulsoup4
+lxml
+python-docx
+arxiv
+wikipedia
+markdownify
+html2text
+readability-lxml
+
+# ---------------- SCRAPING (ADVANCED) ----------------
+playwright
+selenium
+
+# ---------------- SEARCH TOOLS ----------------
+duckduckgo-search
+tavily-python
+google-search-results
+
+# ---------------- MEMORY / STORAGE ----------------
+redis
+sqlalchemy
+
+# ---------------- BACKEND ----------------
+fastapi
+uvicorn
+
+# ---------------- UI ----------------
+streamlit
+
+# ---------------- OBSERVABILITY ----------------
+langsmith
+
+# ---------------- EXECUTION / SYSTEM ----------------
+docker
+psutil
+
+# ---------------- ASYNC / RETRIES ----------------
+aiohttp
+async-timeout
+tenacity
+
+# ---------------- DATA HANDLING ----------------
+pandas
+orjson
+ujson
+
+# ---------------- VALIDATION / SECURITY ----------------
+pydantic
+validators
+
+# ---------------- UTILITIES ----------------
+tiktoken
+python-dotenv
+requests
+
+# ---------------- LOGGING / DEBUG ----------------
+rich
+loguru
+ipython
+
+# ---------------- CLI (OPTIONAL) ----------------
+typer
+
+# ---------------- TASK QUEUE (ADVANCED) ----------------
+celery
