@@ -12,6 +12,7 @@ transformers
 huggingface_hub
 langchain-huggingface
 langchain-ollama
+groq
 
 # ---------------- EMBEDDINGS ----------------
 sentence-transformers
