@@ -14,9 +14,12 @@ from app.config import Config
 
 # ADD:
 from sentence_transformers import SentenceTransformer
-_embedder = SentenceTransformer(Config.EMBEDDING_MODEL)
+_embedder = None
 
 def _get_embedding(text: str) -> list[float]:
+    global _embedder
+    if _embedder is None:
+        _embedder = SentenceTransformer(Config.EMBEDDING_MODEL)
     return _embedder.encode(text, show_progress_bar=False).tolist()
 
 

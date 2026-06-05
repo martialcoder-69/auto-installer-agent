@@ -30,11 +30,13 @@ _client = Groq(api_key=Config.GROQ_API_KEY)
 
 # ADD:
 from sentence_transformers import SentenceTransformer
-_embedder = SentenceTransformer(Config.EMBEDDING_MODEL)
+_embedder = None
 
 def _get_embeddings(texts: list[str]) -> list[list[float]]:
+    global _embedder
+    if _embedder is None:
+        _embedder = SentenceTransformer(Config.EMBEDDING_MODEL)
     return _embedder.encode(texts, show_progress_bar=False).tolist()
-
 def _chat(messages, max_tokens=200, temperature=0.1):
     """Groq chat wrapper."""
     resp = _client.chat.completions.create(
